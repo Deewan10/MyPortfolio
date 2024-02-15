@@ -2,3 +2,30 @@
     margin: 0;
     padding: 0;
 }
+.me {
+    height: 50vh;
+    width: 35%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+.rainbow-text {
+font-size: 24px;
+background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+background-clip: text;
+color: transparent;
+animation: rainbow-blink 2s linear infinite alternate;
+}
+
+@keyframes rainbow-blink {
+0% {
+    background-size: 400% 100%;
+}
+100% {
+    background-size: 100% 100%;
+}
+}
+  
