@@ -59,7 +59,43 @@ span {
     color: #13bbff;
     text-shadow: 3px 3px 20px #13bbff, -2px 1px 30px #fff ;
 }
+#menu {
+    font-size: 25px;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+button {
+    display: flex;
+    padding: 8px 20px;
+    background: transparent;
+    color: #13bbff;
+    border: 2px solid #13bbff;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+button:hover {
+    background: #13bbff;
+    color: #1b1f24;
+    box-shadow: 0 0 20px #13bbff;
+    transform: scaleX(1.11);
+}
+section {
+    padding: 110px 16% 90px;
+}
 
+#hero {
+    height: 70vh;
+    width: 100%;
+    background: url(IMG-20221213-WA00001.png);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
 
 
 
