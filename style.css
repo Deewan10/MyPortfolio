@@ -89,12 +89,44 @@ section {
 #hero {
     height: 70vh;
     width: 100%;
-    background: url(IMG-20221213-WA00001.png);
-    background-position: top right;
-    background-size: contain;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    position: relative;
+}
+.content {
+    
+    width: 45%;
+}
+.heroImg {
+    
+    width: 350px;
+    height: 350px;
+    border: 0px solid #13bbff;
+    border-radius: 50%;
+    position: absolute;
+    right: 230px;
+    top: 160px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.hero img {
+    width: 100%; 
+    display: flex;
+    overflow: hidden;
+    margin-right: 60px;
+}
+.content h4 {
+    font-size: 1.6rem;
+}
+.content h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin: 20px 0px 20px;
+    line-height: 1.2;
+}
+
+.content p {
+    font-size: 1rem;
 }
 
 
