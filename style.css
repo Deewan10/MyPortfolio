@@ -187,16 +187,21 @@ section {
 .progs {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 73%;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
-    gap:25px;
+    margin-left: x;
+    gap:40px;
+    margin: 20px 12%;
 }
 
 .progs img {
     width: 70px;
     height: 80px;
+}
+marquee {
+    color: #1b1f24;
+    background-color: #fff;
 }
 
 
