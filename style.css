@@ -184,7 +184,20 @@ section {
     color: #1b1f24;
 
 }
+.progs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    gap:25px;
+}
 
+.progs img {
+    width: 70px;
+    height: 80px;
+}
 
 
 
