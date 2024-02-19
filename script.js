@@ -64,5 +64,28 @@ const navbar = document.querySelectorAll("navbar");
   
     animate();
   });
+
+  
+
+
+  const listContainer = document.getElementById('listContainer');
+  const marquee = document.getElementById('marquee');
+
+  function resetListPosition() {
+    const firstListItem = listContainer.querySelector('li:first-child');
+    listContainer.appendChild(firstListItem);
+  }
+
+  marquee.addEventListener('animationiteration', resetListPosition);
+
+ 
+  let itemsWidth = 0;
+  listContainer.querySelectorAll('li').forEach(item => {
+    itemsWidth += item.offsetWidth;
+    listContainer.appendChild(item.cloneNode(true));
+  });
+
+  marquee.style.width = itemsWidth * 2 + 'px';
+
   
   
