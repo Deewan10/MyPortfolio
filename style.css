@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 :root {
     --text-color: #fff;
@@ -131,11 +132,12 @@ section {
     max-width: 100%;
     margin-bottom: 30px;
 }
-.social a {
+.socials {
     text-decoration: none;
+    margin-bottom: 20px;
 }
-.social i {
-    display: flex;
+.socials i {
+    display: inline;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -149,7 +151,7 @@ section {
     margin-bottom: 30px;
     transition: all 0.5s ease;
 }
-.social i:hover {
+.socials i:hover {
     transform: scaleX(1.1);
     box-shadow: 0 0 20px #13bbff;
 }
@@ -204,35 +206,65 @@ marquee {
     background-color: #fff;
 }
 
-
-
-
-
-
-/* .me {
-    height: 50vh;
-    width: 35%;
+#navbar.sticky {
+    background: #1b1f24;
+    box-shadow: 0.1rem 1rem rgba (0, 0, 0, .2);
+    padding: 16px 16%;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+
+.me video {
+    border-radius: 155px;
+    border: 5px solid #13bbff;
+}
+
+
+
+
+ @keyframes pulsate {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } 
+  
+  
+  
+  
+  #fireworks-section {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
   
-.rainbow-text {
-font-size: 24px;
-background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-background-clip: text;
-color: transparent;
-animation: rainbow-blink 2s linear infinite alternate;
-}
-
-@keyframes rainbow-blink {
-0% {
-    background-size: 400% 100%;
-}
-100% {
-    background-size: 100% 100%;
-}
-} */
+  .rainbow-text {
+    font-size: 48px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: pulsate 2s infinite;
+    z-index: 1; 
+  }
+  
+  #fireworks-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  
   
