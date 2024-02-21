@@ -268,7 +268,7 @@ marquee li {
     margin-top: 30px;
 }
 .box h3 {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #13bbff;
@@ -285,7 +285,10 @@ marquee li {
     text-decoration: none;
     color: #fff;
 }
-
+.box:hover {
+    border:1px solid #13bbff;
+    transform: translate(-5px) scale(1.03);
+}
 .me video {
     border-radius: 155px;
     border: 5px solid #13bbff;
@@ -321,7 +324,7 @@ marquee li {
   }
   
   .rainbow-text {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: bold;
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     background-size: 200% auto;
@@ -330,6 +333,22 @@ marquee li {
     -webkit-background-clip: text;
     animation: pulsate 2s infinite;
     z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rainbow-text span {
+    font-size: 42px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: pulsate 2s infinite;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #fireworks-canvas {
@@ -340,6 +359,13 @@ marquee li {
     height: 100%;
     z-index: 0;
     background-color: #fff;
+  }
+  .row img {
+    height: auto;
+    width: 250px;
+    border-radius: 28px;
+    margin-top: 20px;
+    margin-bottom: 1.4rem;
   }
   
   
