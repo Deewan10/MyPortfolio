@@ -298,7 +298,85 @@ marquee li {
 
 
 
- @keyframes pulsate {
+ 
+  .row img {
+    height: 150px;
+    width: 200px;
+    border-radius: 28px;
+    margin-bottom: 1rem;
+  }
+  .row:hover img {
+    height: 180px;
+    width: 220px;
+  }
+  .row {
+    max-width: 31%;
+    background: #2d343f;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px #13bbff;
+    padding: 20px;
+    transition: all 0.5s ease;
+    margin-bottom: 25px;
+    border-radius: 28px;
+  }
+  .main-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  .row h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #13bbff;
+  }
+  .row h4 {
+    font-size: 12px;
+    font-weight: 300;
+    display: none;
+  }
+  .row:hover  h4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: 0.5s ease;
+  }
+  .row-icon {
+    margin-top: 15px;
+    padding: 5px 20px;
+    border: 1px solid #13bbff;
+    cursor: pointer;
+    background: transparent;
+  }
+  .row-icon:hover {
+    background: #13bbff;
+    box-shadow: 0 0 20px #13bbff;
+    transition: all 0.5s ease;
+  }
+  .projectcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #projects {
+    background-color: #2d343f;
+  }
+  #projects h2{
+    align-items: center;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  
+
+
+
+
+  @keyframes pulsate {
     0% {
       background-position: 0% 50%;
     }
@@ -323,7 +401,8 @@ marquee li {
     position: relative;
   }
   
-  .rainbow-text {
+  .rainbow-text,
+  .rainbow-text span {
     font-size: 38px;
     font-weight: bold;
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
@@ -337,18 +416,8 @@ marquee li {
     align-items: center;
     justify-content: center;
   }
-  .rainbow-text span {
-    font-size: 42px;
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 200% auto;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: pulsate 2s infinite;
-    z-index: 1; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .rainbow-text span { 
+    text-transform: uppercase;
   }
   
   #fireworks-canvas {
@@ -360,23 +429,5 @@ marquee li {
     z-index: 0;
     background-color: #fff;
   }
-  .row img {
-    height: auto;
-    width: 250px;
-    border-radius: 28px;
-    margin-top: 20px;
-    margin-bottom: 1.4rem;
-  }
-  .row {
-    max-width: 270px;
-  }
-  .projectcont {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
   
   
