@@ -367,6 +367,16 @@ marquee li {
     margin-top: 20px;
     margin-bottom: 1.4rem;
   }
+  .row {
+    max-width: 270px;
+  }
+  .projectcont {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   
   
   
