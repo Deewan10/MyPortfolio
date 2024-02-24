@@ -87,5 +87,20 @@ const navbar = document.querySelectorAll("navbar");
 
   marquee.style.width = itemsWidth * 2 + 'px';
 
+
+  const carousel = document.querySelector('carousel');
+
+    function cloneImages() {
+      const images = carousel.querySelectorAll('img');
+      images.forEach(img => {
+        const clone = img.cloneNode(true);
+        carousel.appendChild(clone);
+    });
+    }
+
+    window.onload = function() {
+      cloneImages();
+    }
+
   
   
