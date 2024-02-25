@@ -88,19 +88,30 @@ const navbar = document.querySelectorAll("navbar");
   marquee.style.width = itemsWidth * 2 + 'px';
 
 
-  const carousel = document.querySelector('carousel');
-
-    function cloneImages() {
-      const images = carousel.querySelectorAll('img');
-      images.forEach(img => {
-        const clone = img.cloneNode(true);
-        carousel.appendChild(clone);
-    });
-    }
-
-    window.onload = function() {
-      cloneImages();
-    }
-
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   const carousel = document.querySelector('.carousel');
+  //   const images = carousel.querySelectorAll('img');
+  //   const totalImages = images.length;
+  //   let currentIndex = 0;
+  
+  //   function showImage(index) {
+  //     carousel.style.transform = `translateY(-${index * 100}%)`;
+  //   }
+  
+  //   function nextImage() {
+  //     currentIndex = (currentIndex + 1) % totalImages;
+  //     showImage(currentIndex);
+  //   }
+  
+  //   // Initial setup
+  //   carousel.style.height = `${totalImages * 100}%`;
+  //   images.forEach(img => {
+  //     img.style.height = `${100 / totalImages}%`;
+  //   });
+  
+  //   // Start auto-scrolling
+  //   const interval = setInterval(nextImage, 2000); // Change interval time as needed
+  // });
+  
   
   

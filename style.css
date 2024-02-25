@@ -295,32 +295,39 @@ marquee li {
     margin-top: 30px;
 }
 #about {
-  display: flex;
+  
 }
 .carousel {
-  width: 300px; 
-  height: 600px; 
-  overflow: hidden;
-}
-
-.carousel-inner {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  transition: transform 0.5s ease;
+  white-space: nowrap;
+  animation: scrollHorizontal 20s linear infinite;
+}
+.carousel img {
+  display: flex;
+  padding: 20px;
+  width: 400px;
+  animation: scrollHorizontal 10s linear infinite;
 }
 
-.carousel-img {
-  max-width: 100%;
-  height: auto;
+.carousel-items{
+  
+  
 }
-@keyframes scrollVertical {
+
+@keyframes scrollHorizontal {
   0% {
-    transform: translate(0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate(cal(-100% * (9 - 3)));
+    transform: translateX(-100%);
   }
 }
+
+
+
+
+
 
 
 
