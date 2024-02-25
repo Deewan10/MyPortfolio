@@ -223,7 +223,8 @@ section {
 marquee {
     color: #fff;
     background-color: #2d333a;
-    
+    border-top: 1px solid #13bbff;
+    border-bottom: 1px solid #13bbff;
 }
 marquee ul {
     display: flex;
@@ -301,26 +302,25 @@ marquee li {
   width: 100%;
   display: flex;
   white-space: nowrap;
-  animation: scrollHorizontal 20s linear infinite;
+  animation: scroll 10s linear infinite;
+  overflow: hidden;
 }
 .carousel img {
   display: flex;
   padding: 20px;
   width: 400px;
-  animation: scrollHorizontal 10s linear infinite;
 }
 
 .carousel-items{
-  
-  
+
 }
 
-@keyframes scrollHorizontal {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-90%);
   }
 }
 

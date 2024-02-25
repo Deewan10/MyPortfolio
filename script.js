@@ -88,30 +88,18 @@ const navbar = document.querySelectorAll("navbar");
   marquee.style.width = itemsWidth * 2 + 'px';
 
 
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   const carousel = document.querySelector('.carousel');
-  //   const images = carousel.querySelectorAll('img');
-  //   const totalImages = images.length;
-  //   let currentIndex = 0;
   
-  //   function showImage(index) {
-  //     carousel.style.transform = `translateY(-${index * 100}%)`;
-  //   }
+  document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.carousel');
+    const images = carousel.querySelectorAll('img');
+    const totalImages = images.length;
   
-  //   function nextImage() {
-  //     currentIndex = (currentIndex + 1) % totalImages;
-  //     showImage(currentIndex);
-  //   }
+    for (let i = 0; i < totalImages; i++) {
+      const clone = images[i].cloneNode(true);
+      carousel.appendChild(clone);
+    }
+  });
   
-  //   // Initial setup
-  //   carousel.style.height = `${totalImages * 100}%`;
-  //   images.forEach(img => {
-  //     img.style.height = `${100 / totalImages}%`;
-  //   });
-  
-  //   // Start auto-scrolling
-  //   const interval = setInterval(nextImage, 2000); // Change interval time as needed
-  // });
   
   
   
