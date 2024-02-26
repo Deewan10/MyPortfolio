@@ -299,23 +299,20 @@ marquee li {
   
 }
 .carousel {
-  width: 100%;
+  width: 400%;
   display: flex;
   white-space: nowrap;
-  animation: scroll 10s linear infinite;
+  animation: scrollHorizontal 40s linear infinite;
   overflow: hidden;
 }
+
 .carousel img {
-  display: flex;
   padding: 20px;
   width: 400px;
 }
 
-.carousel-items{
 
-}
-
-@keyframes scroll {
+@keyframes scrollHorizontal {
   0% {
     transform: translateX(0);
   }
