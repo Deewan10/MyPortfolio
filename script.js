@@ -89,16 +89,8 @@ const navbar = document.querySelectorAll("navbar");
 
 
   
-  document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.querySelector('.carousel');
-    const images = carousel.querySelectorAll('img');
-    const totalImages = images.length;
   
-    for (let i = 0; i < totalImages; i++) {
-      const clone = images[i].cloneNode(true);
-      carousel.appendChild(clone);
-    }
-  });
+  
   
   
   

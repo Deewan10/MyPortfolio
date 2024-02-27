@@ -299,16 +299,16 @@ marquee li {
   
 }
 .carousel {
-  width: 400%;
+  width: 120%;
   display: flex;
   white-space: nowrap;
-  animation: scrollHorizontal 40s linear infinite;
+  animation: scrollHorizontal 20s linear infinite;
   overflow: hidden;
 }
 
 .carousel img {
   padding: 20px;
-  width: 400px;
+  width: 350px;
 }
 
 
@@ -316,8 +316,8 @@ marquee li {
   0% {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-90%);
+  90% {
+    transform: translateX(-20%);
   }
 }
 
