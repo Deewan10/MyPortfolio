@@ -295,7 +295,13 @@ marquee li {
     border: 5px solid #13bbff;
     margin-top: 30px;
 }
-#about {
+.about-details {
+  display: flex;
+}
+.abouttxt {
+  margin: 40px 50px;
+  font-size: 15px;
+  line-height: 23px;
   
 }
 .carousel {
@@ -304,6 +310,7 @@ marquee li {
   white-space: nowrap;
   animation: scrollHorizontal 20s linear infinite;
   overflow: hidden;
+  margin-top: -30px;
 }
 
 .carousel img {
