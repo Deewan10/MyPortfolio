@@ -232,6 +232,10 @@ marquee ul {
 marquee li {
     margin-right: 40px;
 }
+#services {
+  margin-top: -70px;
+
+}
 #services h2 {
     align-items: center;
     text-align: center;
@@ -241,20 +245,21 @@ marquee li {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-left: 40px;
 }
 
 .servicescont {
     display: flex;
-    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     gap: 2.3rem;
     margin-top: 4.2rem;
 }
 .box {
-    padding: 35px 30px 26px;
+    padding: 25px 20px 26px;
     background: #2d343f;
     border-radius: 28px;
-    width: 350px;
+    width: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -262,10 +267,10 @@ marquee li {
     box-shadow: 0 0 5px #13bbff;
     transition: all .50s ease;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 0px;
 }
 .box img {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: 30px;
 }
 .box h3 {
@@ -299,10 +304,10 @@ marquee li {
   display: flex;
 }
 .abouttxt {
-  margin: 40px 50px;
+  margin: 30px 50px;
   font-size: 15px;
   line-height: 23px;
-  
+  font-weight: 500;
 }
 .carousel {
   width: 120%;
@@ -375,11 +380,20 @@ marquee li {
     font-weight: 300;
     display: none;
   }
+  .row-icon a i{
+    text-decoration: none;
+    
+  }
   .row:hover  h4{
     display: flex;
     text-align: center;
     justify-content: center;
     transition: 0.5s ease;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
   .row-icon {
     margin-top: 15px;
@@ -387,6 +401,8 @@ marquee li {
     border: 1px solid #13bbff;
     cursor: pointer;
     background: transparent;
+    text-decoration: none;
+
   }
   .row-icon:hover {
     background: #13bbff;
@@ -528,8 +544,10 @@ marquee li {
   }
 
   .footer {
+    margin-top: 30px;
     padding: 22px;
     display: flex;
+    justify-content: center;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
