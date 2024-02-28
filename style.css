@@ -380,10 +380,7 @@ marquee li {
     font-weight: 300;
     display: none;
   }
-  .row-icon a i{
-    text-decoration: none;
-    
-  }
+  
   .row:hover  h4{
     display: flex;
     text-align: center;
@@ -403,6 +400,10 @@ marquee li {
     background: transparent;
     text-decoration: none;
 
+  }
+  .row a {
+    color: #fff;
+    text-decoration: none;
   }
   .row-icon:hover {
     background: #13bbff;
@@ -552,12 +553,15 @@ marquee li {
     justify-content: space-between;
     gap: 2rem;
     background: #22282f;
-    
+    padding-left: 480px;
+    padding-top: 20px;
   }
   .copyright p {
     font-size: 15px;
     font-weight: 400;
     color: #c3cad5;
+    text-align: center;
+    
   }
   .scroll-top i{
     display: inline-flex;
@@ -568,6 +572,43 @@ marquee li {
     height: 45px;
     border-radius: 50%;
     color: #2d343f;
+  }
+
+  @media (max-width: 1400px) {
+    #navbar {
+      padding: 20px 12%; 
+    }
+    .navlist a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #c3cad5;
+      margin-left: 20px;
+      transition: 0.5s ease;
+      text-decoration: none;
+  }
+  #hero {
+    height: 70vh;
+    width: 100%;
+    }
+    .heroImg {
+      right: 100px;
+      top: 140px;
+      overflow: hidden;
+      padding-right: 10px;
+  }
+    section{
+      padding: 20px 12%;
+    }
+    #hero .content {
+      width: 65%;
+      margin-top: 80px;
+    }
+    #services {
+      margin-top: -20px;
+  }
+  .projectcont {
+    gap: 20px;
+}
   }
   
   
