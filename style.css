@@ -310,26 +310,29 @@ marquee li {
   font-weight: 500;
 }
 .carousel {
-  width: 120%;
-  display: flex;
+  width: 100%;
   white-space: nowrap;
-  animation: scrollHorizontal 20s linear infinite;
+  margin-top: 30px;
   overflow: hidden;
-  margin-top: -30px;
+ 
 }
-
-.carousel img {
+.scroll {
+  display: flex;
+  animation: scroll 21s linear infinite;
+}
+.scroll img {
   padding: 20px;
   width: 350px;
+  max-width: 100;
 }
 
 
-@keyframes scrollHorizontal {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
-  90% {
-    transform: translateX(-20%);
+  50% {
+    transform: translateX(-100%);
   }
 }
 
@@ -603,12 +606,38 @@ marquee li {
       width: 65%;
       margin-top: 80px;
     }
+    #about {
+      margin-top: -130px;
+    }
+    #skills {
+      margin-top: 20px;
+  }
     #services {
-      margin-top: -20px;
+      margin: 20px;
+      margin-bottom: 35px;
   }
   .projectcont {
-    gap: 20px;
-}
+    gap: 25px;
   }
+}
   
-  
+@media (max-width: 1000px) {
+  .heroImg {
+    right: 100px;
+    top: 150px;
+  }
+  #hero .content {
+    width: 65%;
+    margin-top: -30px;
+  }
+  .abouttxt p {
+  margin: 5px 0px;
+  font-size: 15px;
+  width: 115%;
+  }
+  .footer {
+    
+    padding-left: 360px;
+    padding-top: 30px;
+}
+}
