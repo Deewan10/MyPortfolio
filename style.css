@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 16%;
+    padding: 20px 13%;
     transition: all .5s ease;
     background: #1b1f24;
 }
@@ -85,7 +85,7 @@ button:hover {
     transform: scaleX(1.11);
 }
 section {
-    padding: 110px 16% 90px;
+    padding: 110px 13% 90px;
 }
 
 #hero {
@@ -194,6 +194,18 @@ section {
     text-align: center;
     font-size: 2.2rem;
 }
+.about-details {
+  display: flex;
+}
+.abouttxt {
+  margin: 30px 50px;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 500;
+  margin-top: 50px;
+  width: 64.2%;
+  
+}
 #skills {
     margin-top: -70px;
 }
@@ -300,19 +312,11 @@ marquee li {
     border: 5px solid #13bbff;
     margin-top: 30px;
 }
-.about-details {
-  display: flex;
-}
-.abouttxt {
-  margin: 30px 50px;
-  font-size: 15px;
-  line-height: 23px;
-  font-weight: 500;
-}
+
 .carousel {
   width: 100%;
   white-space: nowrap;
-  margin-top: 30px;
+  margin-top: -50px;
   overflow: hidden;
  
 }
@@ -577,7 +581,7 @@ marquee li {
     color: #2d343f;
   }
 
-  @media (max-width: 1400px) {
+@media (max-width: 1000px) {
     #navbar {
       padding: 20px 12%; 
     }
@@ -594,8 +598,8 @@ marquee li {
     width: 100%;
     }
     .heroImg {
-      right: 100px;
-      top: 140px;
+      right: 80px;
+      top: 190px;
       overflow: hidden;
       padding-right: 10px;
   }
@@ -609,6 +613,10 @@ marquee li {
     #about {
       margin-top: -130px;
     }
+    .abouttxt{
+      margin-top: -1px;
+      width: 105px;
+    }
     #skills {
       margin-top: 20px;
   }
@@ -619,9 +627,9 @@ marquee li {
   .projectcont {
     gap: 25px;
   }
-}
+} 
   
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .heroImg {
     right: 100px;
     top: 150px;
@@ -636,7 +644,6 @@ marquee li {
   width: 115%;
   }
   .footer {
-    
     padding-left: 360px;
     padding-top: 30px;
 }
