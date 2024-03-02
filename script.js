@@ -5,6 +5,19 @@ const navbar = document.querySelectorAll("navbar");
      navbar.classList.toggle ("sticky", window.scrollY > 120);
  });
 
+//  let menu = document.querySelector('menu');
+//  let navlist = document.querySelector('.navlist');
+
+//  menu.onclick = () => {
+//   navlist.classList.toggle('active');
+//  }
+
+ if (menu) {
+  menu.addEventListener('click', () => {
+      navlist.classList.add('active');
+  })
+}
+
  document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('fireworks-canvas');
     const ctx = canvas.getContext('2d');
