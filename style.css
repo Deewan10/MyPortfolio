@@ -613,10 +613,20 @@ marquee li {
     #about {
       margin-top: -130px;
     }
-    .abouttxt{
-      margin-top: -1px;
-      width: 105px;
-    }
+    .abouttxt {
+      margin: 20px 30px;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 500;
+      margin-top: 40px;
+      width: 95%;
+  }
+  .abouttxt p {
+    width: 100%;
+  }
+  .carousel {
+    margin-top: 0px;
+}
     #skills {
       margin-top: 20px;
   }
@@ -629,7 +639,7 @@ marquee li {
   }
 } 
   
-@media (max-width: 800px) {
+@media (max-width: 930px) {
   .heroImg {
     right: 100px;
     top: 150px;
@@ -643,8 +653,56 @@ marquee li {
   font-size: 15px;
   width: 115%;
   }
+  .row img {
+    height: 150px;
+    width: 200px;
+    
+}
+.row {
+  max-width: 45%;
+  }
   .footer {
     padding-left: 360px;
     padding-top: 30px;
 }
+}
+@media (max-width:730px ) {
+  .heroImg {
+    right: 50px;
+    top: 110px;
+    z-index: -1;
+}
+.navlist {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 255px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  background: var(--bg-color);
+}
+.navlist a {
+  display: block;
+  padding: 17px;
+  font-size: 22px;
+}
+#menu {
+  display: block;
+  color: #fff;
+  position: absolute;
+  right: 40px;
+  top: 28px;
+}
+.navlist.active {
+
+}
+.content p {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 93%;
+  margin-bottom: 30px;
+}
+
 }
