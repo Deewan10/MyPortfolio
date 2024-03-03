@@ -709,3 +709,14 @@ form .send-btn:hover {
 }
 
 }
+
+@media (max-width: 685px) {
+ .row h5 {
+  font-size: 16px;
+ }
+ .copyright p{
+  display: inline;
+  margin-left: 30px;
+  padding-top: 0px;
+}
+}

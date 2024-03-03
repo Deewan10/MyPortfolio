@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Deewan Portfolio</title>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -26,7 +26,7 @@
             <button href="contact" class="btn1">Contact Me</button>
         </header>
 
-        <section id="hero">
+        <section id="hero" data-aos="fade-in">
             <div class="content">
                 <h4>Hi, There!</h4>
                 <h1>I'm <span>Peters Temidayo</span></h1>
@@ -52,11 +52,11 @@
         <section id="about">
             <h1>About <span>Me</span></h1>
             <div class="about-details">
-                <div class="me">
+                <div class="me" data-aos="zoom-in-down">
                     <video src="VID-20231120-WA0012.mp4" loop autoplay muted nocontrols height="300px"></video>
                 </div>
     
-                <div class="abouttxt">
+                <div class="abouttxt" data-aos="zoom-in-up">
                     <p>I hold a Bachelor's degree in Computer Science and two Professional certicates. One from Google on User Experience Design and the other from the renowned Meta on Front-end Development.<br>
                     I've had the opportunity to work on several designs and Web development projects while meeeting industry standards and business goals ranging from E-commerce, Finance, Beauty and many more.<br>
                     I'm known for my proactivity, problem-solving and resourcefulness (I always get the job done 😁).<br>
@@ -271,7 +271,8 @@
 
         <div class="footer">
             <div class="copyright">
-                ©2024 Peters Temidayo, All Rights Reserved.
+                <p>©2024 Peters 'Deewan' Temidayo, All Rights Reserved.
+                </p>
             </div>
         </div>
 
@@ -281,5 +282,12 @@
         <script src="https://kit.fontawesome.com/d2c39481ee.js" crossorigin="anonymous"></script>
 
         <script src="script.js"> </script> 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 300,
+            duration: 1400,
+          });
+        </script>
     </body>
 </html>
