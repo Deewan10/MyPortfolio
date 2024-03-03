@@ -2,21 +2,22 @@ const navbar = document.querySelectorAll("navbar");
 
 
  window.addEventListener ("scroll", function() {
-     navbar.classList.toggle ("sticky", window.scrollY > 120);
+     navbar.classList.toggle ("sticky", window.scrollY > 70);
  });
 
-//  let menu = document.querySelector('menu');
-//  let navlist = document.querySelector('.navlist');
+ let menu = document.querySelector('#menu');
+ let navlist = document.querySelector('.navlist');
 
-//  menu.onclick = () => {
-//   navlist.classList.toggle('active');
-//  }
+ menu.onclick = () => {
+  menu.classList.toggle('active');
+  navlist.classList.remove('active');
+ }
 
- if (menu) {
-  menu.addEventListener('click', () => {
-      navlist.classList.add('active');
-  })
-}
+//  if (menu) {
+//   menu.addEventListener('click', () => {
+//       navlist.classList.add('active');
+//   })
+// }
 
  document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('fireworks-canvas');
