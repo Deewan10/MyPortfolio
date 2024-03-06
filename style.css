@@ -207,7 +207,17 @@ button:hover {
   font-weight: 500;
   margin-top: 50px;
   width: 64.2%;
-  
+}
+.long-text {
+  max-height: 200px;
+  overflow: hidden;
+}
+.see-more-text {
+  cursor: pointer;
+  color: #13bbff;
+}
+.see-more-text. {
+  display: none;
 }
 #skills {
     margin-top: 70px;

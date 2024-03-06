@@ -23,18 +23,26 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 
-
-
  menu.onclick = () => {
   menu.classList.toggle('active');
   navlist.classList.remove('active');
  }
 
-//  if (menu) {
-//   menu.addEventListener('click', () => {
-//       navlist.classList.add('active');
-//   })
-// }
+ document.addEventListener('DOMContentLoaded', function() {
+  const longText = document.querySelector('.long-text');
+  const seeMoreText = document.querySelector('.see-more-text');
+
+  if (longText.scrollHeight > longText.clientHeight) {
+    seeMoreText.classList.add('show');
+  }
+
+  seeMoreText.addEventListener('click', function () {
+    longText.style.maxHeight = ('none');
+    seeMoreText.style.display = ('none')
+  });
+});
+
+
 
  document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('fireworks-canvas');
