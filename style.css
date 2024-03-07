@@ -209,16 +209,22 @@ button:hover {
   width: 64.2%;
 }
 .long-text {
-  max-height: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.long-text.show-less {
+  display: -webkit-box;
+  -webkit-line-clamp: none; 
+}
+
 .see-more-text {
   cursor: pointer;
   color: #13bbff;
 }
-.see-more-text. {
-  display: none;
-}
+
 #skills {
     margin-top: 70px;
     padding: 110px 13% 90px;
