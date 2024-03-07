@@ -209,8 +209,9 @@ button:hover {
   width: 64.2%;
 }
 .long-text {
+  /* max-height: 200px; */
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

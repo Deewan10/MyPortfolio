@@ -28,36 +28,24 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   navlist.classList.remove('active');
  }
 
-
-
  document.addEventListener('DOMContentLoaded', function() {
   const longText = document.querySelector('.long-text');
   const seeMoreText = document.querySelector('.see-more-text');
 
-  seeMoreText.addEventListener('click', function() {
+  seeMoreText.addEventListener('click', function () {
+    longText.classList.toggle('show-less');
     if (longText.classList.contains('show-less')) {
-      longText.classList.remove('show-less');
-      seeMoreText.textContent = 'See more';
+      longText.style.webkitLineClamp = '15'; 
     } else {
-      longText.classList.add('show-less');
-      seeMoreText.textContent = 'Show less';
+      longText.style.webkitLineClamp = '5'; 
     }
+    seeMoreText.textContent = longText.classList.contains('show-less') ? 'Show less' : 'See more';
   });
 });
 
-//  document.addEventListener('DOMContentLoaded', function() {
-//   const longText = document.querySelector('.long-text');
-//   const seeMoreText = document.querySelector('.see-more-text');
 
-//   if (longText.scrollHeight > longText.clientHeight) {
-//     seeMoreText.classList.add('show');
-//   }
 
-//   seeMoreText.addEventListener('click', function () {
-//     longText.style.maxHeight = ('none');
-//     seeMoreText.style.display = ('none')
-//   });
-// });
+
 
 
 
