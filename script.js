@@ -37,7 +37,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     if (longText.classList.contains('show-less')) {
       longText.style.webkitLineClamp = '15'; 
     } else {
-      longText.style.webkitLineClamp = '5'; 
+      longText.style.webkitLineClamp = '8'; 
     }
     seeMoreText.textContent = longText.classList.contains('show-less') ? 'Show less' : 'See more';
   });
