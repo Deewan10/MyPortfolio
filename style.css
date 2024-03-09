@@ -229,6 +229,9 @@ button:hover {
 #skills {
     margin-top: 70px;
     padding: 110px 13% 90px;
+    border: 1px dashed #13bbff;
+  border-left: none;
+  border-right: none;
 }
 #skills h1{
     align-items: center;
@@ -267,7 +270,10 @@ marquee li {
 }
 #services {
   margin-top: 30px;
-  padding: 50px 13% 90px;
+  padding: 50px 12% 80px;
+  border: 1px dashed #13bbff;
+  border-left: none;
+  border-right: none;
 }
 #services h2 {
     align-items: center;
