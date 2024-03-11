@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  text-decoration: none;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 13%;
+    background: #1b1f24;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    width: 100%;
+
+  }
+  .logo {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+}
+span {
+    color: #13bbff;
+}
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navlist li {
+    list-style: none;
+    
+  }
+  #navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+  }
+  
+  #navbar li a.active {
+    color: #06620A;
+  }
+  #navbar li a:hover {
+    color: #B42323;
+  }
+  #menu {
+    font-size: 25px;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+#close {
+  display: none;
+  text-decoration: none;
+  color: #000;
+}
+button {
+    display: flex;
+    padding: 8px 20px;
+    background: transparent;
+    color: #13bbff;
+    border: 2px solid #13bbff;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+button:hover {
+    background: #13bbff;
+    color: #1b1f24;
+    box-shadow: 0 0 20px #13bbff;
+    transform: scaleX(1.11);
+}
+
+@media (max-width:799px) {
+    
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        background: #1b1f24;
+        padding: 80px 0 0 10px;
+        transition: 0.5s ease;
+        align-items: flex-start;
+        text-decoration: none;
+    }
+    #navbar.active {
+        right: 0px;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+        text-decoration: none;
+    }
+    .navbar li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #bar {
+        display: block;
+        color: #fff;
+        position: absolute;
+        right: 40px;
+        top: 28px;
+      }
+     
+    #close {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        color: #000;
+        text-decoration: none;
+    }
+    #close a {
+        text-decoration: none;
+    }
+}

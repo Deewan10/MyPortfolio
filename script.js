@@ -1,3 +1,19 @@
+const menu = document.getElementById('menu');
+const nav = document.getElementsByClassName('navlist');
+const close = document.getElementById('close');
+
+if (menu) {
+    menu.addEventListener('click', () => {
+        nav.classList.add('active');
+    })
+}
+
+if (close) {
+    close.addEventListener('click', () => {
+        nav.classList.remove('active');
+    })
+}
+
 // const navbar = document.querySelectorAll("navbar");
 
 
@@ -23,10 +39,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 
- menu.onclick = () => {
-  menu.classList.toggle('active');
-  navlist.classList.remove('active');
- }
+
 
  document.addEventListener('DOMContentLoaded', function() {
   const longText = document.querySelector('.long-text');
