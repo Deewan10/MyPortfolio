@@ -17,7 +17,6 @@
     left: 0;
     transition: all .5s ease;
     width: 100%;
-
   }
   .logo {
     font-size: 36px;
@@ -37,18 +36,20 @@ span {
     
   }
   #navbar li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #c3cad5;
+    margin-left: 40px;
+    transition: 0.5s ease;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: #1a1a1a;
-    transition: 0.3 ease;
   }
   
   #navbar li a.active {
     color: #06620A;
   }
   #navbar li a:hover {
-    color: #B42323;
+    color: #13bbff;
+    text-shadow: 3px 3px 20px #13bbff, -2px 1px 30px #fff ;
   }
   #menu {
     font-size: 25px;
@@ -59,7 +60,7 @@ span {
 #close {
   display: none;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 button {
     display: flex;
@@ -89,22 +90,23 @@ button:hover {
         top: 0;
         right: -300px;
         width: 300px;
-        background: #1b1f24;
-        padding: 80px 0 0 10px;
+        background-color: #1b1f24;
         transition: 0.5s ease;
         align-items: flex-start;
-        text-decoration: none;
+        list-style: none;
+        z-index: 99;
     }
     #navbar.active {
         right: 0px;
     }
     #navbar li {
         margin-bottom: 25px;
-        text-decoration: none;
     }
-    .navbar li a {
+    #navbar li a {
         color: #fff;
-        text-decoration: none;
+        font-size: 22px;
+        font-size: 0.9rem;
+        
     }
     #bar {
         display: block;
@@ -115,15 +117,11 @@ button:hover {
       }
      
     #close {
-        display: block;
-        font-size: 30px;
+        display: initial;
+        font-size: 20px;
         position: absolute;
         top: 10px;
-        left: 25px;
-        color: #000;
-        text-decoration: none;
+        left: 40px;
     }
-    #close a {
-        text-decoration: none;
-    }
+    
 }
