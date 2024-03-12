@@ -1,18 +1,18 @@
-const menu = document.getElementById('menu');
-const nav = document.getElementsByClassName('navlist');
-const close = document.getElementById('close');
+// const menu = document.getElementById('menu');
+// const nav = document.getElementsByClassName('navlist');
+// const close = document.getElementById('close');
 
-if (menu) {
-    menu.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
-}
+// if (menu) {
+//     menu.addEventListener('click', () => {
+//         nav.classList.add('active');
+//     })
+// }
 
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
-}
+// if (close) {
+//     close.addEventListener('click', () => {
+//         nav.classList.remove('active');
+//     })
+// }
 
 // const navbar = document.querySelectorAll("navbar");
 
@@ -50,7 +50,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     if (longText.classList.contains('show-less')) {
       longText.style.webkitLineClamp = '15'; 
     } else {
-      longText.style.webkitLineClamp = '8'; 
+      longText.style.webkitLineClamp = '13'; 
     }
     seeMoreText.textContent = longText.classList.contains('show-less') ? 'Show less' : 'See more';
   });
