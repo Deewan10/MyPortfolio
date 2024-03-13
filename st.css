@@ -327,7 +327,7 @@ border-right: none;
   margin-top: 30px;
 }
 .box h3 {
-  font-size: 1px;
+  font-size: 15px;
   font-weight: 700;
   margin-bottom: 10px;
   color: #13bbff;
@@ -767,7 +767,7 @@ max-width: 45%;
     padding: 20px 5%;
 }
 .btn1 {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 #bar {
   right: 67px;
@@ -794,14 +794,66 @@ max-width: 45%;
 .btns {
   display: flex;
   justify-content: center;
-  padding-inline-start: 100px;
+  padding-inline-start: 150px;
+  text-align: center;
 }
 .one {
-  padding: 11px 26px;
+  padding: 11px 25px;
 }
 .two {
   margin-left: 10px;
-  padding: 11px 15px;
+  padding: 11px 25px;
+}
+#about {
+  margin-top: -100px;
+}
+.abouttxt p {
+  margin-left:  -70px;
+  font-size: 15px;
+  width: 130%;
+  margin-top: -10px;
+}
+.me video {
+  border-radius: 90px;
+  border: 5px solid #13bbff;
+  margin-top: 30px;
+  margin-left: 90px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+.about-details {
+  flex-direction: column;
+}
+.row {
+  padding: 12px;  
+}
+.row img {
+  height: 100px;
+  width: 130px;
+}
+.row h5 {
+  font-size: 12px;
+  font-weight: 800;
+}
+#contact {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.contact-form {
+  width: 100%;
+  margin-top: 3.7rem;
+}
+.contact-form form {
+  width: 90%;
+}
+.copyright p {
+  font-size: 8px;
+  font-weight: 400;
+  text-align: right;
+  margin-left: -100px;
+}
 }
 
 
