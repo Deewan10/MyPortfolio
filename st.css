@@ -145,6 +145,7 @@ button:hover {
   font-weight: 400;
   max-width: 100%;
   margin-bottom: 30px;
+  text-align: justify;
 }
 .socials {
   text-decoration: none;
@@ -856,7 +857,60 @@ max-width: 45%;
 }
 }
 
-
+@media (max-width: 430px) {
+  .btn1 {
+    margin-left: -15px;
+}
+#bar {
+  display: block;
+  color: #fff;
+  position: absolute;
+  right: 40px;
+  top: 28px;
+  z-index: 1;
+}
+#hero {
+  height: 70vh;
+  width: 100%;
+  padding: 140px 6% 90px;
+  overflow: hidden;
+}
+.heroImg {
+  right: -100px;
+  top: 100px;
+}
+#about {
+  margin-top: -40px;
+}
+.me video {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+.row img {
+  height: 100px;
+  width: 120px;
+}
+.row {
+  padding: 10px;
+}
+.abouttxt p {
+  margin-left: -70px;
+  font-size: 13px;
+  width: 133%;
+  margin-top: -10px;
+  text-align:justify;
+}
+form .send-btn {
+  font-size: 10px;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 1.2rem;
+}
+.footer {
+  margin-top: 5px;
+}
+}
 
 
 
