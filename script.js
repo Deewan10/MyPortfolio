@@ -1,28 +1,4 @@
-// const menu = document.getElementById('menu');
-// const nav = document.getElementsByClassName('navlist');
-// const close = document.getElementById('close');
 
-// if (menu) {
-//     menu.addEventListener('click', () => {
-//         nav.classList.add('active');
-//     })
-// }
-
-// if (close) {
-//     close.addEventListener('click', () => {
-//         nav.classList.remove('active');
-//     })
-// }
-
-// const navbar = document.querySelectorAll("navbar");
-
-
-//  window.addEventListener ("scroll", function() {
-//      navbar.classList.toggle ("sticky", window.scrollY > 70);
-//  });
-
-//  let menu = document.querySelector('#menu');
-//  let navlist = document.querySelector('.navlist');
 
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -38,6 +14,15 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const contactButton = document.getElementById('contact-button');
+  
+
+  contactButton.addEventListener('click', function() {
+    
+    document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });
+  });
+});
 
 
 
