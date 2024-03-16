@@ -133,6 +133,34 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+  
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+  
+     
+      const formData = new FormData(contactForm);
+      fetch(contactForm.getAttribute('action'), {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        alert('Message sent successfully!');
+        contactForm.reset(); 
+      })
+      .catch(error => {
+        console.error('There was an error sending the form:', error);
+        alert('Failed to send message. Please try again later.');
+      });
+    });
+  });
   
   
   
