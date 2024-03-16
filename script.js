@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
+    const contactForm = document.getElementById('form');
   
     contactForm.addEventListener('submit', function(event) {
       event.preventDefault(); 
