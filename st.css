@@ -938,6 +938,9 @@ form .send-btn {
   padding: 0px 6% 90px;
   overflow: hidden;
 }
+#bar {
+  right: 20px;
+}
 .heroImg {
   margin-left: 150px;
   right: -50px;
@@ -974,6 +977,11 @@ form .send-btn {
 .row h5 {
   font-size: 10px;
   font-weight: 800;
+}
+.row-icon {
+  margin-top: 15px;
+  padding: 5px 15px;
+  border-radius: 10px;
 }
 .row img {
   height: 100px;
