@@ -887,11 +887,13 @@ max-width: 45%;
   margin-left: 70px;
 }
 .row img {
-  height: 100px;
-  width: 120px;
+  height: 200px;
+  width: 240px;
 }
 .row {
-  padding: 10px;
+  padding: 50px;
+  width: 100%;
+  width: 370px;
 }
 .abouttxt p {
   margin-left: -70px;
@@ -899,6 +901,11 @@ max-width: 45%;
   width: 133%;
   margin-top: -10px;
   text-align:justify;
+}
+.projectcont {
+  display: block;
+  flex-direction: column;
+  align-items: center;
 }
 .box {
   padding: 5px 20px 22px;
