@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+#project {
+    display: flex;
+    flex-direction: column;
+}
+.centraltxt {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.centraltxt h2 {
+    font-size: 20px;
+}
+span {
+    color: #0f44b8;
+}
+.projectcont {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    width: 30%;
+    height: 60vh;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    border: 1px solid #0f44b8;
+    border-radius: 10px;
+}
+.pic {
+    width: 300px;
+    height: 100px;
+}
+.pic img {
+    width: ;
+    height: ;
+}

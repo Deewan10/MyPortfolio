@@ -887,16 +887,11 @@ max-width: 45%;
   margin-left: 70px;
 }
 .row img {
-  height: 200px;
-  width: 240px;
+  height: 100px;
+  width: 120px;
 }
 .row {
-  padding: 50px;
-  width: 100%;
-  width: 370px;
-}
-.row {
-  padding: 50px;
+  padding: 10px;
   width: 100%;
   width: 370px;
 }
