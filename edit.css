@@ -24,18 +24,15 @@ span {
     flex-wrap: wrap;
 }
 .row {
-    width: 30%;
+    width: 23%;
     height: 60vh;
     margin-bottom: 40px;
     margin-right: 40px;
     border: 1px solid #0f44b8;
     border-radius: 10px;
 }
-.pic {
-    width: 300px;
-    height: 100px;
-}
-.pic img {
-    width: ;
-    height: ;
+#pic {
+    max-width: 200px;
+    height: 250px;
+    padding: 20px;
 }
