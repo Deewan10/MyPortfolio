@@ -833,6 +833,9 @@ max-width: 45%;
   height: 100px;
   width: 130px;
 }
+.row:hover  h4 {
+  display: none;
+}
 .row h5 {
   font-size: 12px;
   font-weight: 800;
