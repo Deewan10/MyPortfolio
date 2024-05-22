@@ -37,6 +37,13 @@ span {
     border: 1px solid #0f44b8;
     border-radius: 10px;
 }
+.row .pixx {
+    width: 90%;
+    height: 150px;
+}
+.row img {
+    width: 100%;
+}
 #pic {
     max-width: 280px;
     height: 250px;
@@ -48,8 +55,14 @@ span {
     justify-content: center;
     font-weight: 200;
 }
+.row .icons{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .row-icon {
-    padding:0 0 0 15px;
+    padding:5px;
 }
 .row-text h5 {
     padding:0 0 10px 15px;
