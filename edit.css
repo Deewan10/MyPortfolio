@@ -32,22 +32,25 @@ span {
     gap: 40px;
 }
 .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 23%;
-    height: 57vh;
+    height: 50vh;
     border: 1px solid #0f44b8;
     border-radius: 10px;
 }
+
 .row .pixx {
-    width: 90%;
-    height: 150px;
+    width: 80%;
 }
-.row img {
-    width: 100%;
-}
+
 #pic {
-    max-width: 280px;
-    height: 250px;
-    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    height: 160px; 
+    border: 1px solid rgba(128, 128, 128, 0.119);
 }
 .row h4 {
     font-size: 13px;
@@ -56,14 +59,16 @@ span {
     font-weight: 200;
 }
 .row .icons{
-    width: 120px;
+    width: px;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.row-icon {
+    padding:7px;
+    display: flex;
+    font-size: 13px;
     align-items: center;
     justify-content: space-between;
 }
-.row-icon {
-    padding:5px;
-}
-.row-text h5 {
-    padding:0 0 10px 15px;
-}
+
