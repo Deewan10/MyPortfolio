@@ -59,7 +59,7 @@ span {
     font-weight: 200;
 }
 .row .icons{
-    width: px;
+    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
