@@ -3,11 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
   }
 #project {
     display: flex;
     flex-direction: column;
+    background-color: #2d343f;
 }
+.row-text h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #13bbff;
+    text-align: center;
+}
+
 .centraltxt {
     display: flex;
     align-items: center;
@@ -17,28 +26,34 @@
 .centraltxt h2 {
     font-size: 35px;
     padding: 30px;
-}.centraltxt h2 {
-    font-size: 35px;
-    padding: 30px;
+    color: white;
 }
 span {
-    color: #0f44b8;
+    color: #13bbff;
 }
 .projectcont {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 90px;
 }
 .row {
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid #13bbff;
+}
+.row:hover {
+    box-shadow: 0 0 20px #13bbff;
+}
+
+.rowcard {
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 23%;
     height: 50vh;
-    border: 1px solid #0f44b8;
     border-radius: 10px;
 }
 
@@ -53,22 +68,39 @@ span {
     border: 1px solid rgba(128, 128, 128, 0.119);
 }
 .row h4 {
-    font-size: 13px;
-    padding:0 0 15px 15px;
-    justify-content: center;
+    font-size: .7rem;
+    padding: 0 8px;
+    justify-content: end;
+    text-align: center;
     font-weight: 200;
+    color: white;
 }
-.row .icons{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+
+
 .row-icon {
-    padding:7px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border: 1px solid #13bbff;
+    cursor: pointer;
     display: flex;
     font-size: 13px;
-    align-items: center;
-    justify-content: space-between;
+    background: transparent;
+    text-decoration: none;
+}
+.row a {
+    color: #fff;
+    text-decoration: none;
+    }
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media (max-width:799px) {
+
+
+
 }
 
