@@ -38,10 +38,19 @@ span {
     justify-content: center;
     gap: 90px;
 }
+.main-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
 .row {
     width: 20%;
-    border-radius: 10px;
-    border: 1px solid #13bbff;
+    border-radius: 28px;
+    background: #2d343f;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px #13bbff;
 }
 .row:hover {
     box-shadow: 0 0 20px #13bbff;
