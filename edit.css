@@ -119,7 +119,52 @@ span {
     .row-icon a{
         font-size: 8px;
     }
+    .row .pixx {
+        padding-left: 0em;
+    }
 
+    #pic {
+        height: 130px; 
+    }
+    .row-icon {
+        padding: 5px 10px;
+    }
+    .row {
+        width: 25%;
+    }
+    .projectcont {   
+        gap: 50px;    
+    }
+}
 
+@media (max-width:450px) {
+
+    .projectcont {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .row {
+        width: 80%;
+    }
+    #pic {
+        height: 230px;
+    }
+    .rowcard {
+        height: 45vh;
+    }
+    .row-text h5 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .row h4 {
+        font-size: 1.1rem;
+        padding: 0 8px;
+        justify-content: end;
+        
+    }
+    .row-icon a{
+        font-size: 12px;
+    }
 }
 
