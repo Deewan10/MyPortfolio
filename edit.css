@@ -70,7 +70,7 @@ span {
 
 .row .pixx {
     width: 80%;
-    padding-left: 0.5em;
+    padding-left: 0em;
 }
 
 #pic {
@@ -167,4 +167,24 @@ span {
         font-size: 12px;
     }
 }
+
+@media (max-width:400px) {
+    #pic {
+        height: 160px;
+    }
+    .rowcard {
+        height: 50vh;
+    }
+    .row-text h5 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .row {
+        width: 75%;
+    }
+    .row h4 {
+        font-size: 0.9rem;   
+    }
+}
+
 

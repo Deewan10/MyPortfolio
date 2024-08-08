@@ -769,9 +769,14 @@ max-width: 45%;
 }
 .btn1 {
   margin-left: 15px;
+  padding: 6px 12px;
+  font-size: 12px;
 }
 #bar {
   right: 67px;
+}
+.logo {
+  font-size: 32px;
 }
 .heroImg {
   margin-left: 150px;
@@ -825,6 +830,13 @@ max-width: 45%;
 }
 .about-details {
   flex-direction: column;
+}
+.progs {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0px;
 }
 .row {
   padding: 12px;  
@@ -942,7 +954,7 @@ form .send-btn {
     margin-top: 100px;
     z-index: 2;
     font-weight: 800;
-}
+  }
 #hero {
   height: 100vh;
   width: 100%;
