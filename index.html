@@ -46,7 +46,7 @@
                 <div class="btns">
                     
                     <a id="hire" class="btn one">Hire me</a>
-                    <a href="0.1PETERS TEMIDAYO.pdf" download  class="btn two">Download CV</a>
+                    <a href="0.1PETERS TEMIDAYO.pdf" download  class="btn two" onclick="promptPassword()">Download CV</a>
                 </div>
             </div>
             <div class="heroImg"><img src="IMG-20221213-WA00001.png" height="350px" width="350px"> </div>
@@ -313,5 +313,19 @@ if (close) {
         nav.classList.remove('active');
     })
 }
+
+
+        function promptPassword() {
+            var password = prompt("Please enter the password to download the CV:");
+
+            // Define the correct password
+            var correctPassword = "amazing"; 
+
+            if (password === correctPassword) {
+                window.location.href = "0.1PETERS TEMIDAYO.pdf"; // Change this to the path of your encrypted file
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
     </script>
 </html>
