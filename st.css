@@ -383,10 +383,113 @@ max-width: 100;
 }
 }
 
+#projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d343f;
+  padding-bottom: 30px;
+}
+.row-text h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #13bbff;
+  text-align: center;
+}
+
+.centraltxt {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.centraltxt h2 {
+  font-size: 2.5rem;
+  padding: 30px;
+  color: white;
+}
+span {
+  color: #13bbff;
+}
+.projectcont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;    
+  gap: 90px; 
+  
+}
+.main-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.row {
+  width: 20%;
+  border-radius: 28px;
+  background: #2d343f;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px #13bbff;
+}
+.row:hover {
+  box-shadow: 0 0 20px #13bbff;
+}
+
+.rowcard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.row .pixx {
+  width: 80%;
+  padding-left: 0em;
+}
+
+#pic {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px; 
+  border: 1px solid rgba(128, 128, 128, 0.119);
+}
+.row h4 {
+  font-size: 0.65rem;
+  padding: 0 8px;
+  justify-content: end;
+  text-align: center;
+  font-weight: 200;
+  color: white;
+}
+
+
+.row-icon {
+  margin-top: 10px;
+  padding: 5px 20px;
+  border: 1px solid #13bbff;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  background: transparent;
+  text-decoration: none;
+}
+.row a {
+  color: #fff;
+  text-decoration: none;
+  }
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
 
 
-.row img {
+/* .row img {
   height: 150px;
   width: 200px;
   border-radius: 28px;
@@ -472,7 +575,7 @@ align-items: center;
 text-align: center;
 font-size: 2.2rem;
 margin: 10px 0px;
-}
+} */
 #contact {
 text-align: center;
 justify-content: center;
@@ -746,6 +849,32 @@ max-width: 45%;
     top: 10px;
     left: 40px;
 }
+
+.row-text h5 {
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+.row-icon a{
+  font-size: 8px;
+}
+.row .pixx {
+  padding-left: 0em;
+}
+
+#pic {
+  height: 130px; 
+}
+.row-icon {
+  padding: 5px 10px;
+}
+.row {
+  width: 25%;
+}
+.projectcont {   
+  gap: 50px;    
+}
+
 .heroImg {
   right: 50px;
   top: 150px;
@@ -838,20 +967,35 @@ max-width: 45%;
   gap: 40px;
   margin: 40px 0px;
 }
+
+.projectcont {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .row {
-  padding: 12px;  
+  width: 80%;
 }
-.row img {
-  height: 100px;
-  width: 130px;
+#pic {
+  height: 230px;
 }
-.row:hover  h4 {
-  display: none;
+.rowcard {
+  height: 45vh;
 }
-.row h5 {
+.row-text h5 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.row h4 {
+  font-size: 1.1rem;
+  padding: 0 8px;
+  justify-content: end;
+  
+}
+.row-icon a{
   font-size: 12px;
-  font-weight: 800;
 }
+
 #contact {
   text-align: center;
   justify-content: center;
@@ -901,15 +1045,35 @@ max-width: 45%;
   margin-top: 30px;
   margin-left: 70px;
 }
-.row img {
-  height: 100px;
-  width: 120px;
+
+.projectcont {
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+
 .row {
-  padding: 10px;
-  width: 100%;
-  width: 370px;
+  width: 80%;
 }
+#pic {
+  height: 230px;
+}
+.rowcard {
+  height: 45vh;
+}
+.row-text h5 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.row h4 {
+  font-size: 1.1rem;
+  padding: 0 8px;
+  justify-content: end;
+  
+}
+.row-icon a{
+  font-size: 12px;
+}
+
 
 .abouttxt p {
   margin-left: -70px;
@@ -918,11 +1082,7 @@ max-width: 45%;
   margin-top: -10px;
   text-align:justify;
 }
-.projectcont {
-  display: flex;
-  
-  align-items: center;
-}
+
 .box {
   padding: 5px 20px 22px;
   width: 350px;
@@ -997,22 +1157,24 @@ form .send-btn {
   text-align: center;
   line-height: 20px; 
 }
-.row h5 {
-  font-size: 10px;
-  font-weight: 800;
+
+#pic {
+  height: 160px;
 }
-.row-icon {
-  margin-top: 15px;
-  padding: 5px 15px;
-  border-radius: 10px;
+.rowcard {
+  height: 50vh;
 }
-.row img {
-  height: 100px;
-  width: 100px;
+.row-text h5 {
+  font-size: 22px;
+  font-weight: 600;
 }
-.row img:nth-child(1) {
-  width: 105px;
+.row {
+  width: 75%;
 }
+.row h4 {
+  font-size: 0.9rem;   
+}
+
 .rainbow-text, .rainbow-text span {
   font-size: 30px;
   

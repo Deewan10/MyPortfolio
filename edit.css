@@ -5,7 +5,7 @@
     text-decoration: none;
     
   }
-#project {
+#projects {
     display: flex;
     flex-direction: column;
     background-color: #2d343f;
