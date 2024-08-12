@@ -770,7 +770,7 @@ max-width: 45%;
   
 }
 .row-icon a{
-  font-size: 8px;
+  font-size: 15px;
 }
 .row .pixx {
   padding-left: 0em;
@@ -780,7 +780,8 @@ max-width: 45%;
   height: 130px; 
 }
 .row-icon {
-  padding: 10px 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
 }
 .row {
   width: 25%;
@@ -909,7 +910,8 @@ max-width: 45%;
   
 }
 .row-icon a{
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: 800;
 }
 
 #contact {
