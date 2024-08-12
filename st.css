@@ -1083,13 +1083,53 @@ form .send-btn {
 }
 }
 
-@media (max-screen:380px) {
+@media (max-width:380px) {
   .heroImg {
     margin-left: 150px;
     right: -55px;
-    top: 110px;
+    top: 100px;
     width: 350px;
     height: 350px;
   }
+  .abouttxt p {
+    margin-left: -70px;
+    font-size: 11px;
+    width: 133%;
+    margin-top: -10px;
+    text-align: justify;
+}
+.me video {
+  align-content: center;
+  justify-content: center;
 }
 
+}
+
+@media (max-width:330px) {
+  #hero {
+    padding: 30px 6% 90px;
+    overflow: hidden;
+}
+.heroImg {
+  margin-left: 150px;
+  right: -105px;
+  top: 130px;
+  width: 380px;
+  height: 380px;
+}
+.btns {
+  margin-left: 90px;
+  padding: 11px 18px;
+}
+.abouttxt p {
+  margin-left: -65px;
+  font-size: 11px;
+  width: 133%;
+ 
+}
+.me video {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+}
