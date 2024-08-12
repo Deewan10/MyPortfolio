@@ -911,7 +911,7 @@ max-width: 45%;
 }
 .row-icon a{
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #contact {
@@ -1021,8 +1021,8 @@ form .send-btn {
 }
 .heroImg {
   margin-left: 150px;
-  right: -55px;
-  top: 110px;
+  right: -50px;
+  top: 85px;
   width: 350px;
   height: 350px;
 }
@@ -1083,5 +1083,13 @@ form .send-btn {
 }
 }
 
-
+@media (max-screen:380px) {
+  .heroImg {
+    margin-left: 150px;
+    right: -55px;
+    top: 110px;
+    width: 350px;
+    height: 350px;
+  }
+}
 
