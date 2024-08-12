@@ -780,7 +780,7 @@ max-width: 45%;
   height: 130px; 
 }
 .row-icon {
-  padding: 5px 10px;
+  padding: 10px 10px;
 }
 .row {
   width: 25%;
@@ -909,7 +909,7 @@ max-width: 45%;
   
 }
 .row-icon a{
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #contact {
