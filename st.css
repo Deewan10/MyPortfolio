@@ -387,7 +387,7 @@ max-width: 100;
   display: flex;
   flex-direction: column;
   background-color: #2d343f;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .row-text h5 {
   font-size: 20px;
@@ -489,93 +489,7 @@ span {
 
 
 
-/* .row img {
-  height: 150px;
-  width: 200px;
-  border-radius: 28px;
-  margin-bottom: 1rem;
-}
-.row:hover img {
-  height: 180px;
-  width: 245px;
-}
-.row {
-  max-width: 31%;
-  background: #2d343f;
-  border: 1px solid transparent;
-  box-shadow: 0 0 5px #13bbff;
-  padding: 20px;
-  transition: all 0.5s ease;
-  margin-bottom: 25px;
-  border-radius: 28px;
-}
-.main-row {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
 
-.row h5 {
-font-size: 20px;
-font-weight: 600;
-color: #13bbff;
-}
-.row h4 {
-font-size: 12px;
-font-weight: 300;
-display: none;
-}
-
-.row:hover  h4{
-display: flex;
-text-align: center;
-justify-content: center;
-transition: 0.5s ease;
-}
-.icons {
-display: flex;
-justify-content: center;
-gap: 10px;
-}
-.row-icon {
-margin-top: 15px;
-padding: 5px 20px;
-border: 1px solid #13bbff;
-cursor: pointer;
-background: transparent;
-text-decoration: none;
-
-}
-.row a {
-color: #fff;
-text-decoration: none;
-}
-.row-icon:hover {
-background: #13bbff;
-box-shadow: 0 0 20px #13bbff;
-transition: all 0.5s ease;
-}
-.projectcont {
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-top: 30px;
-flex-wrap: wrap;
-width: 100%;
-}
-#projects {
-background-color: #2d343f;
-margin-top: 40px;
-padding: 70px 13% 50px;
-}
-#projects h2{
-align-items: center;
-text-align: center;
-font-size: 2.2rem;
-margin: 10px 0px;
-} */
 #contact {
 text-align: center;
 justify-content: center;
@@ -974,13 +888,15 @@ max-width: 45%;
 }
 
 .row {
-  width: 80%;
+  min-width: 100%;
 }
 #pic {
   height: 230px;
+  min-width: 100%;
 }
 .rowcard {
   height: 45vh;
+  width: 100%;
 }
 .row-text h5 {
   font-size: 25px;
@@ -1046,33 +962,10 @@ max-width: 45%;
   margin-left: 70px;
 }
 
-.projectcont {
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 
-.row {
-  width: 80%;
-}
-#pic {
-  height: 230px;
-}
-.rowcard {
-  height: 45vh;
-}
-.row-text h5 {
-  font-size: 25px;
-  font-weight: 600;
-}
-.row h4 {
-  font-size: 1.1rem;
-  padding: 0 8px;
-  justify-content: end;
-  
-}
-.row-icon a{
-  font-size: 12px;
-}
+
+
+
 
 
 .abouttxt p {
