@@ -486,6 +486,9 @@ span {
   justify-content: center;
   gap: 10px;
 }
+.row-icon:hover {
+  background-color: #13bbff;
+}
 
 
 
