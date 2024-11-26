@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    
+    <link rel="stylesheet" href="assignment.css">
+</head>
+
+<body>
+    <!-- <div class="box">
+
+        <h1 id="num">1</h1>
+        <div class="btn">
+            <button onclick="increase()">Increase</button>
+            <button onclick="decrease()">Decrease</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        
+    </div> -->
+
+    <nav>
+        <ul>
+            <li>Work</li>
+            <li>Capbilities</li>
+            <li>About</li>
+            <li>Music</li>
+            <li>Careers</li>
+            <li>Search....</li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="pix">
+            <img src="Rectangle 4.png" alt="" width="450px">
+            <h3>Indoor</h3>
+            <div class="text">
+                <p>New Collection</p>
+                <p>02-25-2022</p>
+            </div>
+        </div>
+        <div class="pix one">
+            <img src="Rectangle 5.png" alt="" width="450px">
+            <h3>Outdoor</h3>
+            <div class="text">
+                <p>New Collection</p>
+                <p>02-25-2022</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="cont">
+        <div class="cont">
+            <h3>IT ALL STARTS HERE!</h3>
+            <div class="content">
+                <div class="txt">
+                    <h2>WE CREATE THE INTAGIBLE</h2>
+                </div>
+                <div class="txtt">
+                    <p>Founded in 2018, HERE Studio is a full service creative agency with a unique point of view. We dive deep into the foundations of what makes a brand, a brand. We create timeless identities and product experiences digitally and offline. We design physical spaces and create the intangible ‘feeling’ that brands (and customers) crave.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <h3>WORK WE HAVE DONE!</h3>
+            <div class="content">
+                <div class="txt">
+                    <h2>CLIENTS & APPROACH</h2>
+                </div>
+                <div class="txtt">
+                    <p>For brands, our creative process is built on immersive discovery and ideation to validate the cornerstones that make them special. Building from strategy, we tap into the unique magic of a brand identity — and then bring that magic to life across a wide spectrum of creative needs with our team of creators, makers, and storytellers.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prod">
+        <div class="prod">
+            <div class="product">
+                <img src="Rectangle 7.png" alt="" width="260px">
+                <h3>Armoire</h3>
+                <div class="text">
+                    <p>New Collection</p>
+                    <p>$30</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="Rectangle 8.png" alt="" width="260px">
+                <h3>Bureau</h3>
+                <div class="text">
+                    <p>New Collection</p>
+                    <p>$45</p>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="Rectangle 9.png" alt="" width="260px">
+                <h3>Cellarette</h3>
+                <div class="text">
+                    <p>New Collection</p>
+                    <p>$40</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="Rectangle 8.png" alt="" width="260px">
+                <h3>Trundle bed</h3>
+                <div class="text">
+                    <p>New Collection</p>
+                    <p>20</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="Rectangle 11.png" alt="" width="260px">
+                <h3>Trundle bed</h3>
+                <div class="text">
+                    <p>New Collection</p>
+                    <p>$50</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="Rectangle 4.png" alt="" width="260px">
+                <h3>Cupboard</h3>
+                <div class="text">
+                    <p>New Collection</p>
+                    <p>$20</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<style>
+    /* body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        padding: 5px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        border: 1px solid black;
+    }
+    button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        
+    }
+    .btn {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: white;
+        color: blue;
+        cursor: pointer;
+        font-weight: 600;
+    } */
+
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        list-style: none;
+        border-right: 1px solid black;
+        padding-right: 40px;
+    }
+    nav ul li:nth-child(6) {
+        border-right: none;  
+    }
+    .hero {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .pix {
+        margin-right: 20px;
+        border-bottom: 1px solid black;
+    }
+    /* .pix::after {
+        content: " ";
+        width: 2px;
+    
+    } */
+     #cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        height: 40vh;
+        flex-wrap: wrap;
+     }
+     .cont {
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+
+     }
+     .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .txt {
+        width: 30%;
+     }
+     .txt h3{
+        font-size: 2.2rem;
+        margin-top: -30px;
+     }
+     .txtt {
+        width: 50%;
+     }
+    .text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    button {
+        background-color: black;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 20px;
+    }
+    #prod {
+        display: flex;
+        width: 100%;
+        margin-top: 370px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .prod {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70%;
+        padding-top: 20px;
+       
+    }
+    .product {
+        width: 30%;
+        border-bottom: 1px solid black;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 950px) {
+        .hero {
+        display: flex;
+        padding: 20px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+    @media (max-width: 440px) {
+        .hero {
+            display: flex;
+            flex-direction: column;
+        }
+        .nav ul {
+            display: none;
+            justify-content: none;
+        }
+        .nav ul li{
+            display: none;
+        }
+        .product {
+        width: 100%;
+        border-bottom: 1px solid black;
+        margin-top: 20px;
+        }
+        #prod {
+        margin-top: 170px;
+    }
+    }
+
+
+
+    
+</style>
+
+<script>
+    let number = 1;
+
+function updateNumber() {
+    document.getElementById('num').textContent = number;
+}
+
+function increase() {
+    number++;
+    updateNumber();
+}
+
+function decrease() {
+    if (number > 0) {
+    number--;
+    updateNumber();
+    }
+}
+
+function reset() {
+    number = 0;
+    updateNumber();
+}
+</script>
